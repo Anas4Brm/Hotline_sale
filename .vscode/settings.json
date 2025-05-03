@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Hotline Sale.sln"
+    "dotnet.defaultSolution": "Hotline_sale.sln"
 }
