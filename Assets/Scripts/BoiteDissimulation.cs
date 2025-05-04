@@ -6,6 +6,17 @@ public class BoiteDissimulation : MonoBehaviour
     private bool playerNearby = false;
     private bool isHidden = false;
     public KeyCode hideKey = KeyCode.E;
+    
+    // Add material and color properties
+    private Material boxMaterial;
+    public Color boxColor = new Color(0.36f, 0.25f, 0.20f); // Brown color
+
+    void Start()
+    {
+        // Get the material and set initial color
+        boxMaterial = GetComponent<MeshRenderer>().material;
+        boxMaterial.color = boxColor;
+    }
 
     void OnTriggerEnter(Collider other)
     {
