@@ -10,9 +10,9 @@ public class NewPlayerBehavior : MonoBehaviour
     
     private Rigidbody myRigidBody;
     private int hashSpeed;
-    private float attackTime = 0.4f;
-    private PlayerWeaponType currentWeapon = PlayerWeaponType.NULL;
-    private float attackCooldown = 0.1f;
+    public float attackTime = 0.4f;
+    public PlayerWeaponType currentWeapon = PlayerWeaponType.NULL;
+    public float attackCooldown = 0.1f;
     private float attackTimer = 0f;
 
     void Start()
